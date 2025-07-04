@@ -1,0 +1,480 @@
+html{
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body{
+  font-family: "Montserrat", sans-serif;
+  background-image: url(fundo-svg.svg);
+  background-size: cover;
+  background-repeat:no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  color: #ffffff;
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+  min-height: 100vh;
+}
+
+main{
+  display: flex;
+  flex-flow: column;
+  flex: 1;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+h1{
+  font-size: 3.32rem;
+  margin-bottom: 1.6rem;
+  text-decoration: underline;
+}
+
+h2{
+  font-size: 2.76rem;
+  margin-bottom: 1rem;
+  text-decoration: underline;
+}
+
+h3{
+  font-size: 1.92rem;
+  margin-bottom: 1rem;
+}
+
+p{
+  font-size: 1.6rem;
+  line-height: 1.02;
+  text-align: justify;
+}
+
+li{
+  font-size: 1.5rem;
+  list-style: none;
+}
+
+section, 
+footer{
+  display: flex;
+  flex-flow: column;
+  gap: 2rem;
+}
+
+a:link, 
+a:visited {
+  color: #ffffff;   
+}
+
+a:hover, 
+a:active{
+  color: #ffd26d;
+  font-weight: 500;
+}
+
+.bold{
+  font-weight: bold;
+}
+
+.italic{
+  font-style: italic;
+}
+
+header {
+  background-color: rgba(0, 0, 0, 0.409);
+  padding: 2rem 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3.9rem;
+}
+
+nav{
+  display: flex;
+  gap: 4rem;
+}
+
+.nav-header,
+.icones-header,
+.ul-1{
+  display:flex;
+  gap: 0.5rem;
+}
+
+.ul-1{
+  gap: 2rem;
+  transform: scale(1.05);
+}
+
+.ul-1 li a{
+  font-size: 1.92rem;
+}
+
+.bee-logo-header{
+  width: 8rem;
+  position: flex;
+
+}
+
+header ul a{
+  text-transform: uppercase;
+  list-style: none;
+  color: #fff;
+  font-size: 2.5rem;
+  display: flex;
+}
+
+.logo.dark-light-mode,
+.logo.logo-github-cabeçalho,
+.menu-logo{
+  width: 4rem;
+  height: 4rem;
+}
+
+.logo.translate-logo{
+  width: 3.8rem;
+  height: 3.8rem;
+}
+
+.icones-header svg:hover {
+  color: #ffd26d;
+  transform: scale(1.05);
+}
+
+.menu-logo,
+.hidden{
+  display: none;
+}
+
+main section {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  height: 0;
+  overflow: hidden;
+}
+
+main section.ativa {
+  opacity: 1;
+  height: auto;
+}
+
+.div-apresentacao{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
+}
+
+.p-apresentacao{
+  font-family: "M PLUS Code Latin", monospace;
+  font-optical-sizing: auto;
+  font-size: 6rem;
+  white-space: nowrap;
+  border-right: 0.2rem solid rgb(0, 0, 0);
+  overflow: hidden;
+  animation: typing 4s steps(28) forwards, blink 0.8s infinite;
+  text-align: center;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 28ch;
+  }
+}
+
+@keyframes blink {
+  0%, 100% {
+    border-color: transparent;
+  }
+  50% {
+    border-color: rgb(255, 255, 255);
+  }
+}
+
+.sessao-sobre-mim,
+.certificados,
+.projetos{
+  display: flex;
+  gap: 2rem;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-sobre-mim,
+.container-certificados,
+.container-projetos{
+  display: flex;
+  flex-flow: column;
+  gap: 3.12rem;
+  width: 100%;
+  max-width: 100rem;
+  padding: 0 3.12rem;
+}
+
+.container-formacao-idioma{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3.9rem
+}
+
+.registros{
+  gap: 1.02rem;
+  padding: 2rem 0;
+}
+
+.container-blocos-img{
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.registros img{
+  box-shadow: 0 0 0.8rem 0.1rem #ffd36dda;
+}
+
+.registros div{
+  display: flex;
+  gap: 5rem;
+}
+
+.img-sessao-registros{
+  width: 18rem;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.bloco-2-registros .img-sessao-registros{
+  width: 23rem;
+}
+
+.img-sessao-registros:hover{
+  transform: scale(1.05);
+}
+
+.container-certificados h1{
+  text-align: center;
+}
+
+.certificados-tema-titulo{
+  display: flex;
+  flex-flow: column;
+}
+
+.certificados-tema-titulo ul span{
+  text-decoration: underline;
+} 
+
+.lista-projetos{
+  display: flex;
+  flex-flow: column;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+}
+
+#fale-comigo{
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  gap:2.3rem;
+}
+
+.formulario-fale-cmg{
+  font-size: 1.92rem;
+  display: flex;
+  flex-flow: column;
+  gap: 2rem;
+  align-items: center
+}
+
+.formulario-fale-cmg div{
+  display: flex;
+  flex-flow: column;
+  gap: 1.02rem;
+}
+
+input,
+textarea{
+  font-size: 1.75rem;
+  color: #fff;
+  width: 50rem;
+  height: 3.9rem;
+  background-color: transparent;
+  box-shadow: 0 0 0.5rem 0.2em rgba(255, 213, 1, 0.464);
+}
+
+textarea{
+  height: 10rem;
+}
+
+button{
+  font-size: 2.3rem;
+  padding: 1rem 5rem;
+  background-color: transparent;
+  color: #fff;
+  box-shadow: 0 0 0.1rem #ffd26d;
+  border-radius: 0.5rem;
+  display: flex;
+  cursor: pointer;
+  margin-bottom: 2rem;
+}
+
+button:hover{
+  box-shadow: inset 0 0 0.2rem 0.1rem #ffd26d;
+  transform: scale(1.02);
+}
+
+footer{
+  display: flex;
+  flex-flow: column;
+  gap: 2rem;
+  background-color: rgba(0, 0, 0, 0.409);
+  align-items: center;
+  padding: 2rem;
+}
+
+.footer-icons{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.6rem;
+}
+
+.logo{
+  text-decoration: none;
+  color: #fff;
+  display: flex;
+}
+
+.logo.logo-email, 
+.logo.logo-github,
+.logo.logo-instagram,
+.logo.logo-discord,
+.logo.logo-twitter {
+  width: 4rem;
+}
+
+.logo.logo-linkedin{
+  width: 5rem;
+}
+
+.logo.logo-email:hover, 
+.logo.logo-github:hover,
+.logo.logo-instagram:hover,
+.logo.logo-discord:hover,
+.logo.logo-twitter:hover,
+.logo-linkedin:hover{
+  color: #ffd26d;
+  transform: scale(1.05);
+}
+
+/* Responsividade */
+@media (max-width: 940px){
+    header{
+      flex-direction: column;
+      align-items: flex-start;
+      flex-wrap: nowrap;
+      gap: 5rem;
+    }
+  
+   nav{
+      display: flex;
+      gap: 0;
+   }
+    .bee-logo-header{
+        width: min(100%, 6rem);
+        position: flex;
+    }
+  
+    .nav-header{
+      align-items: flex-start;
+      gap: 2rem;
+      display: none;
+      width: 100%;
+    }
+  
+    .ul-1{
+      flex-direction: column;
+      width: 100%;
+    }
+  
+    .ul-1 li a{
+      font-size: 2rem;
+    }
+  
+    .menu-logo{
+      display: block;
+      cursor: pointer;
+    }
+  
+    .icones-header{
+      position: absolute;
+      right: 1.5rem;
+      top: 3rem;
+      align-self: center;
+      justify-content: flex-end;
+      width: 100%;
+      order: 2;
+      
+    }
+  
+    .container-sobre-mim,
+    .container-certificados,
+    .container-projetos{
+      padding: 0 1.6rem;
+    }
+  
+    .p-apresentacao{
+      font-size: 3rem;
+      white-space: nowrap;
+      animation: typing 4s steps(28) forwards, blink 0.8s infinite;
+      border-right: 0.2rem solid #ffffff;
+    }
+  
+    .container-formacao-idioma{
+      flex-direction: column;
+      gap: 2rem;
+    }
+  
+    input,
+    textarea,
+    button{
+      width: 100%;
+    }
+  
+    button{
+      justify-content: center;
+    }
+  
+    .registros div{
+      flex-direction: column;
+      align-items: center;
+      gap: 2rem;
+    }
+  
+    .img-sessao-registros{
+      width: 100%;
+      max-width: 25rem;
+    }
+  
+    .logo.logo-email, 
+    .logo.logo-github,
+    .logo.logo-instagram,
+    .logo.logo-discord,
+    .logo.logo-twitter{
+        width: 3.5rem;
+    }
+  
+    .logo.logo-linkedin{
+        width: 4.5rem;
+    }
+    
+}
