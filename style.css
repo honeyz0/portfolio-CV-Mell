@@ -32,19 +32,19 @@ main{
 }
 
 h1{
-  font-size: 3.32rem;
-  margin-bottom: 1.6rem;
-  text-decoration: underline;
-}
-
-h2{
   font-size: 2.76rem;
   margin-bottom: 1rem;
   text-decoration: underline;
 }
 
+h2{
+  font-size: 2.3rem;
+  margin-bottom: 1rem;
+  text-decoration: underline;
+}
+
 h3{
-  font-size: 1.92rem;
+  font-size: 1.6rem;
   margin-bottom: 1rem;
 }
 
@@ -200,7 +200,7 @@ main section.ativa {
 }
 
 .sessao-sobre-mim,
-.certificados,
+.formacao-educacional,
 .projetos{
   display: flex;
   gap: 2rem;
@@ -209,69 +209,64 @@ main section.ativa {
   justify-content: center;
 }
 
-.container-sobre-mim,
-.container-certificados,
+
+.container-formacao,
+.container-hardskills,
 .container-projetos{
   display: flex;
   flex-flow: column;
   gap: 3.12rem;
   width: 100%;
-  max-width: 100rem;
-  padding: 0 3.12rem;
+  max-width: 80rem;
+  padding: 4rem 3.9rem;
+  align-items: center;
 }
 
-.container-formacao-idioma{
+.container-sobre-mim{
   display: flex;
-  flex-wrap: wrap;
-  gap: 3.9rem
-}
-
-.registros{
-  gap: 1.02rem;
-  padding: 2rem 0;
+  gap: 3.9rem;
+  width: 100%;
+  max-width: 90rem;
+  padding: 10rem 3.9rem;
+  align-items: center;
 }
 
 .container-blocos-img{
   display: flex;
-  flex-flow: column;
   align-items: center;
 }
 
-.registros img{
+.container-blocos-img img{
   box-shadow: 0 0 0.8rem 0.1rem #ffd36dda;
+  width: 30rem;
+  height: auto;
+  transition: transform 0.3s ease;
 }
 
+.container-blocos-img img:hover{
+  transform: scale(1.05);
+}
 .registros div{
   display: flex;
   gap: 5rem;
 }
 
-.img-sessao-registros{
-  width: 18rem;
-  height: auto;
-  transition: transform 0.3s ease;
-}
 
-.bloco-2-registros .img-sessao-registros{
-  width: 23rem;
-}
-
-.img-sessao-registros:hover{
-  transform: scale(1.05);
-}
-
-.container-certificados h1{
-  text-align: center;
-}
-
-.certificados-tema-titulo{
+.container-formacao-idioma{
   display: flex;
-  flex-flow: column;
+  gap: 9.54rem;
 }
 
-.certificados-tema-titulo ul span{
-  text-decoration: underline;
-} 
+.container-hardskills ul{
+  display: flex;
+  gap: 3.9rem;
+}
+.container-hardskills div{
+  display: flex;
+  gap: 3.12rem;
+  align-items: center;
+}
+
 
 .lista-projetos{
   display: flex;
@@ -281,6 +276,7 @@ main section.ativa {
 }
 
 #fale-comigo{
+  padding: 4rem 3.9rem;
   display: flex;
   flex-flow: column;
   align-items: center;
@@ -427,7 +423,8 @@ footer{
     }
   
     .container-sobre-mim,
-    .container-certificados,
+    .container-formacao,
+    .container-hardskills,
     .container-projetos{
       padding: 0 1.6rem;
     }
@@ -453,16 +450,148 @@ footer{
     button{
       justify-content: center;
     }
-  
-    .registros div{
-      flex-direction: column;
+
+    .container-sobre-mim{
+      display: flex;
+      flex-flow: column;
+
+    }
+
+    .container-blocos-img img{
+      justify-content: center;
       align-items: center;
+      width: 100%;
+      max-width: 30rem;
+    }
+  
+    .container-hardskills ul{
+      display: flex;
+      flex-flow: column;
+      gap: 2.5rem;
+      padding: 2.5rem;
+    }
+    .container-hardskills div{
+      display: flex;
+      gap: 2rem;
+      align-items: center;
+    }
+  
+    .logo.logo-email, 
+    .logo.logo-github,
+    .logo.logo-instagram,
+    .logo.logo-discord,
+    .logo.logo-twitter{
+        width: 3.5rem;
+    }
+  
+    .logo.logo-linkedin{
+        width: 4.5rem;
+    }
+    
+}
+
+@media (max-width: 429px){
+    header{
+      flex-direction: column;
+      align-items: flex-start;
+      flex-wrap: nowrap;
+      gap: 5rem;
+    }
+  
+   nav{
+      display: flex;
+      gap: 0;
+   }
+    .bee-logo-header{
+        width: min(100%, 6rem);
+        position: flex;
+    }
+  
+    .nav-header{
+      align-items: flex-start;
+      gap: 2rem;
+      display: none;
+      width: 100%;
+    }
+  
+    .ul-1{
+      flex-direction: column;
+      width: 100%;
+    }
+  
+    .ul-1 li a{
+      font-size: 2rem;
+    }
+  
+    .menu-logo{
+      display: block;
+      cursor: pointer;
+    }
+  
+    .icones-header{
+      position: absolute;
+      right: 1.5rem;
+      top: 3rem;
+      align-self: center;
+      justify-content: flex-end;
+      width: 100%;
+      order: 2;
+      
+    }
+  
+    .container-sobre-mim,
+    .container-formacao,
+    .container-hardskills,
+    .container-projetos{
+      padding: 0 1.6rem;
+    }
+  
+    .p-apresentacao{
+      font-size: 3rem;
+      white-space: nowrap;
+      animation: typing 4s steps(28) forwards, blink 0.8s infinite;
+      border-right: 0.2rem solid #ffffff;
+    }
+  
+    .container-formacao-idioma{
+      flex-direction: column;
       gap: 2rem;
     }
   
-    .img-sessao-registros{
+    input,
+    textarea,
+    button{
       width: 100%;
-      max-width: 25rem;
+    }
+  
+    button{
+      justify-content: center;
+    }
+
+    .container-sobre-mim{
+      display: flex;
+      flex-flow: column;
+
+    }
+
+    .container-blocos-img img{
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      max-width: 30rem;
+    }
+  
+    .container-hardskills ul{
+      display: flex;
+      flex-flow: column;
+      gap: 2.5rem;
+      padding: 2.5rem;
+    }
+    .container-hardskills div{
+      display: flex;
+      flex-flow: column;
+      gap: 2rem;
+      align-items: center;
     }
   
     .logo.logo-email, 

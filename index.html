@@ -20,20 +20,18 @@
         <nav>
             <div class="nav-header">
                 <ul class="ul-1">
-                    <li>
+                    <!-- <li>
                         <a 
                             href="#" 
                             onclick="mostrarSessao('inicio'); return false;"
-                            data-translate="inicio"
                         >Inicio
                         </a>
-                    </li>
+                    </li> -->
                    
                     <li>
                         <a 
                             href="#" 
                             onclick="mostrarSessao('sessao-sobre-mim'); return false;"
-                            data-translate="sobre"
                         >Sobre mim
                         </a>
                     </li>
@@ -41,9 +39,8 @@
                     <li>
                         <a 
                             href="#" 
-                            onclick="mostrarSessao('certificados'); return false;"
-                            data-translate="certificados"
-                        >Certificados
+                            onclick="mostrarSessao('formacao-educacional'); return false;"
+                        >Formação
                         </a>
                     </li>
 
@@ -51,7 +48,6 @@
                         <a 
                             href="#" 
                             onclick="mostrarSessao('projetos'); return false;"
-                            data-translate="projetos"
                         >Projetos
                         </a>
                     </li>
@@ -169,11 +165,30 @@
                 <div class="sobre-mim">
                     <h1>Sobre mim</h1>
                     <p>
-                        Sou uma estudante de tecnologia e tenho uma quedinha pelo perfeccionismo, sempre buscando fazer tudo com cuidado e dedicação. Adoro aprender coisas novas e me desafiar constantemente!
+                       Estudante de tecnologia, dev em construção e perfeccionista assumida (daquelas que revisam o código só mais uma vez… só pra ter certeza). Tenho uma curiosidade inquieta e uma paixão por aprender que vive me colocando em novos desafios — e eu adoro isso.
                     </p>
+                    <br>
+                    <p>
+                       No tempo livre, reflito sobre a vida como quem debuga a própria existência — às vezes com sucesso, às vezes com um <i>segmentation fault.</i>
+                    </p>           
                 </div>
+         
+                <div class="container-blocos-img">
+                    <div class="bloco-1-registros">
+                            <!-- <img class="img-sessao-registros" src="images/img1.jpg" alt="notebook-yellow-light"> -->
+                        <img src="images/img3.jpg" alt="eu-motor">
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        
+        <!-- Formação Educacional -->
+        <section id="formacao-educacional" class="formacao-educacional">
+            <div class="container-formacao">
+                <h1>Formação Educacional</h1>
                 <div class="container-formacao-idioma">
-                    <div class="formacao-educacional">
+                    <div class="">
                         <h2>Formação Educacional</h2>
                         <h3>Ensino Médio</h3>
                         <p>Colégio Estadual Jacintho Xavier Martins</p>
@@ -192,92 +207,23 @@
                         </ul>
                     </div>
                 </div>
-                <div class="experiencia-profissional">
-                    <h2>Experiência Profissional</h2>
-                    <p class="bold">Assistente de Suporte TI e ADM, Autonomo (PJ)</p>
-                    <p class="italic">Março, 2025 - julho, 2025</p>
-                    <br><br>
-                    <p class="bold">Jovem Aprendiz, Sotreq S/A</p>
-                    <p class="italic">Março, 2023 – fevereiro, 2025</p>
-    
-                </div>
-                
-            
-                <div class="registros">
-                    <h2>Registros</h2>
-                    <div class="container-blocos-img">
-                        <div class="bloco-1-registros">
-                            <img class="img-sessao-registros" src="images/img1.jpg" alt="notebook-yellow-light">
-                            <img class="img-sessao-registros" src="images/img2.jpg" alt="eu-trofeu">
+                <div class="container-hardskills">
+                    <h2>Hard Skills</h2>
+                    <ul>
+                        <div>
+                            <li>Word</li>
+                            <li>Excel, Macros & VBA</li>
+                            <li>PowerPoint</li>
+                            <li>PowerBI</li>
+                            <li>Python</li>
                         </div>
-                        <div class="bloco-2-registros">
-                            <img class="img-sessao-registros" src="images/img4.jpg" alt="eu-e-feitosa">
-                            <img class="img-sessao-registros" src="images/img3.jpg" alt="eu-motor">
+                        <div>
+                            <li>Pandas & Matplotlib</li>
+                            <li>HTML & CSS</li>
+                            <li>JavaScript</li>
+                            <li>MySQL</li>
+                            <li>Git & Github</li>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    
-        
-        <!-- Certificados -->
-        <section id="certificados" class="certificados">
-            <div class="container-certificados">
-                <h1>Hard Skills e Certificados</h1>
-
-                <div class="certificados-tema-titulo">
-                    <h2>Sistemas Operacionais:</h2>
-                    <ul>
-                        <li>Windows (16h – SOS Educação Profissional)</li>
-                        <li>Linux (40h – Curso em Vídeo)</li>
-                    </ul>
-                </div>
-
-                <div class="certificados-tema-titulo">
-                    <h2>Pacote Microsoft Office (SOS Educação Profissional):</h2>
-                    <ul>
-                        <li>Word (13h)</li>
-                        <li>Excel e Macros (17h)</li>
-                        <li>PowerPoint (12h)</li>
-                        <li>Access (15h)</li>
-                    </ul>
-                </div>
-
-                <div class="certificados-tema-titulo">
-                    <h2>Segurança da Informação:</h2>
-                    <ul>
-                        <li>Princípios e Práticas de Segurança da Informação</li>
-                    </ul>
-                </div>
-
-                <div class="certificados-tema-titulo">
-                    <h2>Programação e Desenvolvimento:</h2>
-                    <ul>
-                        <li>VBA para Excel (87h – Hashtag Treinamentos) </li>
-                        <li>Python (124h – Hashtag Treinamentos) – Cursando</li>
-                        <li>HTML e CSS (87h – Hashtag Treinamentos) – Cursando</li>
-                    </ul>
-                </div>
-
-                <div class="certificados-tema-titulo">
-                    <h2>Análise e Visualização de Dados:</h2>
-                    <ul>
-                        <li>Power BI (118h – Hashtag Treinamentos) – Cursando</li>
-                        <li>SQL Impressionador (90h – Hashtag Treinamentos) - Cursando</li>
-                    </ul>
-                </div>
-
-                <div class="certificados-tema-titulo">
-                    <h2>Sistemas Empresariais</h2>
-                    <ul>
-                        <span class="bold">
-                            <li>SAP - Sotreq S/A</li>
-                        </span>
-                        <ul>
-                            <li>Pedidos de Compra</li>
-                            <li>Pagamento Eletrônico e Tributos</li>
-                            <li>Entrada e Criação de Nota Fiscal Eletrônica (NFe)</li>
-                        </ul>
                     </ul>
                 </div>
             </div>
@@ -290,7 +236,7 @@
                 <h1>Projetos</h1>
                 <div class="lista-projetos">
                     <div>
-                        <a href="https://honeyz0.github.io/portfolio-Mell/" target="_blank">
+                        <a href="https://honeyz0.github.io/portfolio-CV-Mell/" target="_blank">
                             <h2>Meu portfólio</h2>
                         </a>
                         <p>
@@ -298,19 +244,11 @@
                         </p>
                     </div>
                     <div>
-                        <a href="https://www.instagram.com/cybeesafe_br/?utm_source=ig_web_button_share_sheet" target="_blank">
-                            <h2>cybeesafe_br</h2>
-                        </a>
-                        <p>
-                            Perfil no Instagram dedicado a falar sobre Cibersegurança
-                        </p>
-                    </div>
-                    <div>
                         <a href="https://github.com/honeyz0/Cofrinho-em-Java" target="_blank">
-                            <h2>Cofrinho em Real, Dolár e Euro</h2>
+                            <h2>Cofrinho Digital</h2>
                         </a>
                         <p>
-                            Cofrinho feito no Java, uma atividade da faculdade
+                            Cofrinho Digital feito em Java, com uma interface que permite acrescentar moedas, retirar moedas, listar moedas.
                         </p>
                     </div>
                     <div>
@@ -318,7 +256,7 @@
                             <h2>Cadastro de Contatos</h2>
                         </a>
                         <p>
-                           Cadastro de Contatos feito no Python, uma atividade da faculdade
+                           Cadastro de Contatos feito em Python, com uma interface que permite cadastrar um contato, consultar contato(s) e remover contato.
                         </p>
                     </div>
                 </div>
